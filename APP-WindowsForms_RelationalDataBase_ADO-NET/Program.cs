@@ -16,7 +16,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
