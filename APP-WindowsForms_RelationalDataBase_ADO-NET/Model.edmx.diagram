@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3ba6992848444e8abaca83b3fb44b1f2" Name="Diagram1">
+        <EntityTypeShape EntityType="dbrolesModel.modulo" Width="1.5" PointX="1.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbrolesModel.opcion" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbrolesModel.permiso" Width="1.5" PointX="3.375" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbrolesModel.rol" Width="1.5" PointX="5.625" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbrolesModel.sysdiagrams" Width="1.5" PointX="8.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbrolesModel.usuario" Width="1.5" PointX="5.5" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="dbrolesModel.fk_opcion_modulo" ManuallyRouted="false" />
+        <AssociationConnector Association="dbrolesModel.fk_permiso_opcion" ManuallyRouted="false" />
+        <AssociationConnector Association="dbrolesModel.fk_permiso_rol" ManuallyRouted="false" />
+        <AssociationConnector Association="dbrolesModel.fk_usuario_rol" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
