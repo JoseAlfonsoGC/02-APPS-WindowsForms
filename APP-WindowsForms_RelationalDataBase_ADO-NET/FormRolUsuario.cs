@@ -16,6 +16,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
         {
             InitializeComponent();
         }
+        //Efecto de inimacion
         Panel p = new Panel();
         private void FormRolUsuario_Load(object sender, EventArgs e)
         {
@@ -38,6 +39,97 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+        //programacion de interfaz
+        private void GUardarRol()
+        {
+            try
+            {
+                using(dbrolesEntities db = new dbrolesEntities())
+                {
+                    rol rol = new rol();
+                    rol.nombre = txtNombre.Text.ToUpper().Trim();//mayusculas y quitar espacios en blanco en caso de tenerlos
+                    db.rol.Add(rol);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        private void GuardarPermiso(permiso pPermiso)
+        {
+            try
+            {
+                using(dbrolesEntities db= new dbrolesEntities())
+                {
+                    db.permiso.Add(pPermiso);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                throw;
+            }
+        }
+        private int UltimoRegistro()
+        {
+            using(dbrolesEntities db = new dbrolesEntities())
+            {
+                var ultimo = (from c in db.rol //uso de linq
+                              orderby c.id descending
+                              select c.id).FirstOrDefault();
+                return ultimo;
+            }
+        }
+        private void CheckRol()
+        {
+            permiso permisoEntidad = new permiso();
+            int id = UltimoRegistro();
+            foreach(Control chk in pTipoUsuario.Controls)
+            {
+                permisoEntidad.rolUsuarioid = id;
+                if(chk is CheckBox)
+                {
+                    if (((CheckBox)chk).Checked)
+                    {
+                        permisoEntidad.opcionid = Convert.ToInt32(chk.Tag);
+                        permisoEntidad.permitido = true;
+                        GuardarPermiso(permisoEntidad);
+                    }
+                    else
+                    {
+                        permisoEntidad.opcionid = Convert.ToInt32(chk.Tag);
+                        permisoEntidad.permitido = false;
+                        GuardarPermiso(permisoEntidad);
+                    }
+                }
+            }
+        }
+        private void Limpiar()
+        {
+            txtNombre.Text = string.Empty;
+            txtNombre.Focus();
+            foreach(Control chk in pTipoUsuario.Controls)
+            {
+                if(chk is CheckBox)
+                {
+                    if (((CheckBox)chk).Checked)
+                    {
+                        ((CheckBox)chk).Checked = false;
+                    }
+                }
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            GUardarRol();
+            CheckRol();
+            Limpiar();
+            MessageBox.Show("Rol de usuario guardado");
         }
     }
 }
