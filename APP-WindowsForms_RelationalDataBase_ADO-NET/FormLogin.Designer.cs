@@ -137,6 +137,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(180, 13);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.MouseEnter += new System.EventHandler(this.btnMauseEnter);
             // 
             // FormLogin

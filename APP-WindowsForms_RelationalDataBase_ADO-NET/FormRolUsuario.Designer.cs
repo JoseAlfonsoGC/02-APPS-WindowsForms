@@ -113,6 +113,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbRolUsuario.Name = "chbRolUsuario";
             this.chbRolUsuario.Size = new System.Drawing.Size(92, 17);
             this.chbRolUsuario.TabIndex = 16;
+            this.chbRolUsuario.Tag = "10";
             this.chbRolUsuario.Text = "Rol Usuario";
             this.chbRolUsuario.UseVisualStyleBackColor = true;
             // 
@@ -124,6 +125,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbVenta.Name = "chbVenta";
             this.chbVenta.Size = new System.Drawing.Size(59, 17);
             this.chbVenta.TabIndex = 15;
+            this.chbVenta.Tag = "13";
             this.chbVenta.Text = "Venta";
             this.chbVenta.UseVisualStyleBackColor = true;
             // 
@@ -135,6 +137,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbBaja.Name = "chbBaja";
             this.chbBaja.Size = new System.Drawing.Size(51, 17);
             this.chbBaja.TabIndex = 14;
+            this.chbBaja.Tag = "12";
             this.chbBaja.Text = "Baja";
             this.chbBaja.UseVisualStyleBackColor = true;
             // 
@@ -146,6 +149,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbAlta.Name = "chbAlta";
             this.chbAlta.Size = new System.Drawing.Size(48, 17);
             this.chbAlta.TabIndex = 13;
+            this.chbAlta.Tag = "11";
             this.chbAlta.Text = "Alta";
             this.chbAlta.UseVisualStyleBackColor = true;
             // 
@@ -167,6 +171,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbLocker.Name = "chbLocker";
             this.chbLocker.Size = new System.Drawing.Size(69, 17);
             this.chbLocker.TabIndex = 11;
+            this.chbLocker.Tag = "9";
             this.chbLocker.Text = "Clocker";
             this.chbLocker.UseVisualStyleBackColor = true;
             // 
@@ -178,6 +183,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbPilates.Name = "chbPilates";
             this.chbPilates.Size = new System.Drawing.Size(64, 17);
             this.chbPilates.TabIndex = 7;
+            this.chbPilates.Tag = "6";
             this.chbPilates.Text = "Pilates";
             this.chbPilates.UseVisualStyleBackColor = true;
             // 
@@ -189,6 +195,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbSpinning.Name = "chbSpinning";
             this.chbSpinning.Size = new System.Drawing.Size(75, 17);
             this.chbSpinning.TabIndex = 6;
+            this.chbSpinning.Tag = "5";
             this.chbSpinning.Text = "Spinning";
             this.chbSpinning.UseVisualStyleBackColor = true;
             // 
@@ -200,6 +207,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbMembresias.Name = "chbMembresias";
             this.chbMembresias.Size = new System.Drawing.Size(92, 17);
             this.chbMembresias.TabIndex = 10;
+            this.chbMembresias.Tag = "8";
             this.chbMembresias.Text = "Membresias";
             this.chbMembresias.UseVisualStyleBackColor = true;
             // 
@@ -211,6 +219,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbPesas.Name = "chbPesas";
             this.chbPesas.Size = new System.Drawing.Size(60, 17);
             this.chbPesas.TabIndex = 5;
+            this.chbPesas.Tag = "4";
             this.chbPesas.Text = "Pesas";
             this.chbPesas.UseVisualStyleBackColor = true;
             // 
@@ -232,6 +241,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbServicios.Name = "chbServicios";
             this.chbServicios.Size = new System.Drawing.Size(78, 17);
             this.chbServicios.TabIndex = 9;
+            this.chbServicios.Tag = "7";
             this.chbServicios.Text = "Servicios";
             this.chbServicios.UseVisualStyleBackColor = true;
             // 
@@ -243,6 +253,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbUsuario.Name = "chbUsuario";
             this.chbUsuario.Size = new System.Drawing.Size(69, 17);
             this.chbUsuario.TabIndex = 3;
+            this.chbUsuario.Tag = "3";
             this.chbUsuario.Text = "Usuario";
             this.chbUsuario.UseVisualStyleBackColor = true;
             // 
@@ -254,6 +265,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbEmpleados.Name = "chbEmpleados";
             this.chbEmpleados.Size = new System.Drawing.Size(87, 17);
             this.chbEmpleados.TabIndex = 2;
+            this.chbEmpleados.Tag = "2";
             this.chbEmpleados.Text = "Empleados";
             this.chbEmpleados.UseVisualStyleBackColor = true;
             // 
@@ -275,6 +287,7 @@ namespace APP_WindowsForms_RelationalDataBase_ADO_NET
             this.chbSocios.Name = "chbSocios";
             this.chbSocios.Size = new System.Drawing.Size(64, 17);
             this.chbSocios.TabIndex = 1;
+            this.chbSocios.Tag = "1";
             this.chbSocios.Text = "Socios";
             this.chbSocios.UseVisualStyleBackColor = true;
             // 
